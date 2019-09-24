@@ -5,7 +5,7 @@
 	height: 100vh;
 }
 #particles-js{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image.jpg);
+	background-color: blue;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
