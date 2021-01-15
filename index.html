@@ -31,11 +31,14 @@
 
   .panel {
     padding: 0 0px;
+    width:100%;
+    vertical-align:middle;
     background-color: #f9f9f9;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
   }
+
   </style>  
 
 </head>
@@ -56,7 +59,7 @@
               <a href="images/chrisagia_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chrisagia_circle.png" class="hoverZoomLink"></a>
             </td>
 
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:2.5%;width:63%;vertical-align:middle;background-color: #f9f9f9">
               <p style="text-align:center">
                 <name>Chris Agia</name>
               </p>
@@ -84,18 +87,156 @@
         
 
 
-        <p>
+        <p></p>
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-        </p>
+
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
+              </p>
+              <p>
+                I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
+              </p>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
+              </p>
+              <p>
+                I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/aug_att_rl.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Attention-based Representations in Deep Reinforcement Learning for Autonomous Driving</papertitle>
+              <br>
+              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
+              <br>
+              <em>Under review</em>, 2021
+              <p>Learning visual state representations can significantly reduce the strain on policy learning from high-dimensional images. In this paper, we propose a framework to inform and guide policy learning with augmented attention representations, demonstrating outstanding convergence speeds and stability for self-driving control.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/s3cnet_demo.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>S3CNet: A Sparse Semantic Scene Completion Network for LiDAR Point Clouds</papertitle>
+              <br>
+              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented]. <a href="https://www.robot-learning.org"><em>Conference on Robot Learning (CoRL)</em></a>, 2020 | MIT, US
+              <br> [<a href="https://arxiv.org/abs/2012.09242">Paper</a>] [<a href="https://www.youtube.com/watch?v=ircJBFc5PqM&feature=youtu.be&ab_channel=CoRLConference">Talk</a>] [<a href="https://www.youtube.com/watch?v=voU_zAhNDnQ&feature=youtu.be&ab_channel=RanCheng">Video</a>]
+              <p>Small-scale semantic reconstruction methods have had little success in large outdoor scenes as a result of exponential increases in sparsity, and a computationally expensive design. We propose a sparse convolutional network architecture based on the <a href="https://github.com/StanfordVL/MinkowskiEngine">Minkowski Engine</a>, achieving state-of-the-art results for semantic scene completion in 2D/3D space from LiDAR point clouds.</p>
+            </td>
+          </tr>
+        </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sem_loc.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Lightweight Semantic-aided Localization with Spinning LiDAR Sensor</papertitle>
+              <br>
+              Yuan Ren, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented]. <em>Manuscript under review at <a href="https://www.ieee-itss.org/ieee-iv-transactions">IEEE Transactions on Intelligent Vehicles (T-IV)</a></em>, 2020
+              <p>How can semantic information be leveraged to improve localization accuracy in changing environments? We present a novel semantic enhanced LiDAR-based localization algorithm that considers a robust combination of semantic and non-semantic information, enabling adaptive scene-dependent localization behaviour.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ddvo_res.gif" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Depth Prediction for Monocular Direct Visual Odometry</papertitle>
+              <br>
+              <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
+              <br>
+              <a href="http://www.computerrobotvision.org/"><em>Conference on Computer and Robotic Vision (CRV)</em></a>, 2020 | Ottawa, ON
+              <br> [<a href="https://www.computerrobotvision.org/proceedings/pdfs/CRV2020-1ugoWdlO2rSdvYvbAocrmh/989100a070/989100a070.pdf">Paper</a>] [<a href="https://www.youtube.com/watch?v=Z8vpet0doik&feature=youtu.be&ab_channel=ComputerRobotVision">Talk</a>] [<a href="https://www.computerrobotvision.org/posters/paper_56.pdf">Poster</a>]
+              <p>Direct methods are able to track motion with considerable long-term accuracy. However, scale inconsistent estimates arise from random or unit depth initialization. We integrate dense depth prediction with the Direct Sparse Odometry system to accelerate convergence in the windowed bundle-adjustment and promote estimates with consistent scale.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/road_surface_seg.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Road Surface Semantic Segmentation from LiDAR Point Clouds</papertitle>
+              <br>
+              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
+              <br>
+              [Patented], 2020
+              <p>Long-range sparsity in point clouds constitutes a challenge for accurate LiDAR-based road estimation. This invention leverages bird's eye view features learned directly from aggregated point clouds and refines them with a convolutional CRF to semantically segment roads and predict surface elevation with high precision.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #f9f9f9;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/robot_nav.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>A Sim-to-Real Pipeline for Deep Reinforcement Learning for Autonomous Robot Navigation in Cluttered Rough Terrain</papertitle>
+              <br>
+              <a href="https://www.linkedin.com/in/kczhang/?originalSubdomain=ca">Kaicheng Zhang</a>, <a href="https://www.linkedin.com/in/richardhu-12dsf/?originalSubdomain=ca">Han Hu</a>, <a href="https://www.linkedin.com/in/aaron-hao-tan/?originalSubdomain=ca">Aaron Hao Tan</a>, <a href="https://www.linkedin.com/in/michael-ruan-0822/">Michael Ruan</a>, <strong>Christopher Agia</strong>, <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"> Goldie Nejat</a>
+              <br>
+              <em>Manuscript under review</em>, 2020             
+              <p>Deep Reinforcement Learning is effective for learning robot navigation policies in rough terrain and cluttered simulated environments. In this work, we introduce a series of techniques that are applied in the policy learning phase to enhance transferability to real-world domains.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <p></p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 
 
 
         <button class="accordion">..Education</button>
         <div class="panel">
+        <p></p>
         <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
-            <td>
-              <heading>Education</heading>
+            <td style="text-align: right; background-color: #eee">
+              <heading style="font-family: monospace; font-size: 22px; color: #444">..Education</heading>
             </td>
           </tr>
         </tbody></table> -->
@@ -124,144 +265,14 @@
 
 
 
-        <p>
+        <p></p>
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-        </p>
-
-
-
-        <button class="accordion">..Research</button>
-        <div class="panel">
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
-              </p>
-              <p>
-                I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
-              </p>
-            </td>
-          </tr>
-        </tbody></table> -->
-
-        <p>
-          I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
-        </p>
-        <p>
-          I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
-        </p>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/aug_att_rl.gif" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Attention-based Representations in Deep Reinforcement Learning for Autonomous Driving</papertitle>
-              <br>
-              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
-              <br>
-              <em>Under review</em>, 2021
-              <p>Learning visual state representations can significantly reduce the strain on policy learning from high-dimensional images. In this paper, we propose a framework to inform and guide policy learning with augmented attention representations, demonstrating outstanding convergence speeds and stability for self-driving control.</p>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/s3cnet_demo.gif" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>S3CNet: A Sparse Semantic Scene Completion Network for LiDAR Point Clouds</papertitle>
-              <br>
-              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
-              <br>
-	      [Patented]. <a href="https://www.robot-learning.org"><em>Conference on Robot Learning (CoRL)</em></a>, 2020 | MIT, US
-	      	  <br> [<a href="https://arxiv.org/abs/2012.09242">Paper</a>] [<a href="https://www.youtube.com/watch?v=ircJBFc5PqM&feature=youtu.be&ab_channel=CoRLConference">Talk</a>] [<a href="https://www.youtube.com/watch?v=voU_zAhNDnQ&feature=youtu.be&ab_channel=RanCheng">Video</a>]
-              <p>Small-scale semantic reconstruction methods have had little success in large outdoor scenes as a result of exponential increases in sparsity, and a computationally expensive design. We propose a sparse convolutional network architecture based on the <a href="https://github.com/StanfordVL/MinkowskiEngine">Minkowski Engine</a>, achieving state-of-the-art results for semantic scene completion in 2D/3D space from LiDAR point clouds.</p>
-            </td>
-          </tr>
-        </tbody></table>
-	      
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/sem_loc.gif" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Lightweight Semantic-aided Localization with Spinning LiDAR Sensor</papertitle>
-              <br>
-              Yuan Ren, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
-              <br>
-              [Patented]. <em>Manuscript under review at <a href="https://www.ieee-itss.org/ieee-iv-transactions">IEEE Transactions on Intelligent Vehicles (T-IV)</a></em>, 2020
-              <p>How can semantic information be leveraged to improve localization accuracy in changing environments? We present a novel semantic enhanced LiDAR-based localization algorithm that considers a robust combination of semantic and non-semantic information, enabling adaptive scene-dependent localization behaviour.</p>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/ddvo_res.gif" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Depth Prediction for Monocular Direct Visual Odometry</papertitle>
-              <br>
-              <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>, <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>
-              <br>
-              <a href="http://www.computerrobotvision.org/"><em>Conference on Computer and Robotic Vision (CRV)</em></a>, 2020 | Ottawa, ON
-              <br> [<a href="https://www.computerrobotvision.org/proceedings/pdfs/CRV2020-1ugoWdlO2rSdvYvbAocrmh/989100a070/989100a070.pdf">Paper</a>] [<a href="https://www.youtube.com/watch?v=Z8vpet0doik&feature=youtu.be&ab_channel=ComputerRobotVision">Talk</a>] [<a href="https://www.computerrobotvision.org/posters/paper_56.pdf">Poster</a>]
-              <p>Direct methods are able to track motion with considerable long-term accuracy. However, scale inconsistent estimates arise from random or unit depth initialization. We integrate dense depth prediction with the Direct Sparse Odometry system to accelerate convergence in the windowed bundle-adjustment and promote estimates with consistent scale.</p>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/road_surface_seg.png" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Road Surface Semantic Segmentation from LiDAR Point Clouds</papertitle>
-              <br>
-              <strong>Christopher Agia</strong>, <a href="https://rancheng.github.io/about/">Ran Cheng</a>, Yuan Ren, <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>
-              <br>
-              [Patented], 2020
-              <p>Long-range sparsity in point clouds constitutes a challenge for accurate LiDAR-based road estimation. This invention leverages bird's eye view features learned directly from aggregated point clouds and refines them with a convolutional CRF to semantically segment roads and predict surface elevation with high precision.</p>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/robot_nav.png" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>A Sim-to-Real Pipeline for Deep Reinforcement Learning for Autonomous Robot Navigation in Cluttered Rough Terrain</papertitle>
-              <br>
-              <a href="https://www.linkedin.com/in/kczhang/?originalSubdomain=ca">Kaicheng Zhang</a>, <a href="https://www.linkedin.com/in/richardhu-12dsf/?originalSubdomain=ca">Han Hu</a>, <a href="https://www.linkedin.com/in/aaron-hao-tan/?originalSubdomain=ca">Aaron Hao Tan</a>, <a href="https://www.linkedin.com/in/michael-ruan-0822/">Michael Ruan</a>, <strong>Christopher Agia</strong>, <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"> Goldie Nejat</a>
-              <br>
-              <em>Manuscript under review</em>, 2020             
-              <p>Deep Reinforcement Learning is effective for learning robot navigation policies in rough terrain and cluttered simulated environments. In this work, we introduce a series of techniques that are applied in the policy learning phase to enhance transferability to real-world domains.</p>
-            </td>
-          </tr>
-        </tbody></table>
-        </div>
-        
-
-
-        <p>
-<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-        </p>
 
 
 
         <button class="accordion">..Work Experience</button>
         <div class="panel">
+        <p></p>
         <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
@@ -269,7 +280,6 @@
             </td>
           </tr>
         </tbody></table> -->
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -405,9 +415,8 @@
 
 
 
-        <p>
+        <p></p>
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-        </p>
 
 
 
@@ -425,11 +434,18 @@
             </td>
           </tr>
         </tbody></table> -->
-        <p>
-          <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
-        <p>
-          Links to the source code are embedded in the project titles.
-        </p>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
+              <p>
+                Links to the source code are embedded in the project titles.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
           <tr>
@@ -616,29 +632,30 @@
 
 
   <script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  }
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
   </script>
+
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <div id="particles-js"></div>
   <script>
-      particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
-      function(){
-          console.log("particles.json loaded...")
-      })
+    particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
+    function(){
+        console.log("particles.json loaded...")
+    })
   </script>
 
 
