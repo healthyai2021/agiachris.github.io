@@ -5,15 +5,17 @@
   
   <meta name="author" content="Christopher Agia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="icon" type="image/png" href="images/ml_icon.png">
 
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 </head>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
 <body>
@@ -25,6 +27,11 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
+
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/chrisagia_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chrisagia_circle.png" class="hoverZoomLink"></a>
+            </td>
+
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Chris Agia</name>
@@ -32,7 +39,7 @@
               <p>
                 I am a fourth year <a href="https://engsci.utoronto.ca/explore_our_program/about_engsci/">Engineering Science</a> student at the University of Toronto, majoring in <strong>Robotics Engineering</strong> and minoring in <strong>Artificial Intelligence</strong>. The goal of my research is to push the boundary of AI perception and decision making systems enabling robots to embody intelligent behaviour with a high-degree of robustness. I am advised by <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a> at the <a href="https://rvl.cs.toronto.edu/">Robot Vision and Learning Lab</a> (affiliations: <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://robotics.utoronto.ca/">UofT Robotics Institute</a>). My senior year thesis is focused on learning large-scale scene graph representations suited for downstream robot planning and control tasks. We are excitedly working with researchers from <a href="https://liampaull.ca/">Liam Paull</a>'s group at <a href="https://montrealrobotics.ca/">MILA</a>, Facebook AI Research, and Microsoft Research on this project. 
               </p>
-
+            
               <p>
               	I'm fortunate to have collaborated on projects with <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>'s and <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>'s group at <a href="https://www.cim.mcgill.ca/~mrl/">McGill</a>, and <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"> Goldie Nejat</a>'s group at the <a href="http://asblab.mie.utoronto.ca/">University of Toronto</a>. In industry, I had the opportunity to pursue a one-year <strong>Deep Learning Research</strong> internship at <a href="http://www.noahlab.com.hk/#/home"><strong>Huawei Noah's Ark Lab</strong></a>, where I worked on perception and localization systems for <strong>self-driving vehicles</strong>. As a <strong>Software Engineering Intern</strong> at <a href="https://about.google/"><strong>Google</strong></a>, I architected an ABI test harness and simulator that allows developers to write language agnostic <a href="https://github.com/proxy-wasm">proxy extensions</a> and test them in a safe and controlled environments. 
               </p>
@@ -45,24 +52,29 @@
                 <a href="http://www.linkedin.com/in/agiachris/"> LinkedIn</a> &nbsp/&nbsp
                 <a href="https://github.com/agiachris/"> GitHub</a>
               </p>
+
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <!-- <a href="images/chrisagia_rect.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chrisagia_rect.png" class="hoverZoomLink"></a> -->
-              <a href="images/chrisagia_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chrisagia_circle.png" class="hoverZoomLink"></a>
-            </td>
+
           </tr>
         </tbody></table>
         
 
 
+        <p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+        </p>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+
+
+        <button class="accordion">..Education</button>
+        <div class="panel">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Education</heading>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
           <tr>
@@ -84,10 +96,19 @@
             </td>
           </tr>
         </tbody></table>
+        </div>
 
 
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+        </p>
+
+
+
+        <button class="accordion">..Research</button>
+        <div class="panel">
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
@@ -99,25 +120,14 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
-
-
-       <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/deep_residual_thumb.png" alt="clean-usnob" width="140" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Deep Residual Pattern Learner for Robust Direct Tracking</papertitle>
-              <br>
-              <a href="https://rancheng.github.io/about/">Ran Cheng</a>, <strong>Christopher Agia</strong>
-              <br>
-              <em>Experiments in Progress</em>, 2020.
-              <p>We proposed a pipeline to weight residual pattern based on the residual point image local context to simulate the feature encoding and matching process in in-direct approaches. We are aiming to reduce the non-convexity introduced by including original images in energy function.</p>
-            </td>
-          </tr>
         </tbody></table> -->
 
+        <p>
+          I am interested bridging concepts from <strong>Robotics</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> to build improved task planning, motion planning, decision-making and control systems. More recently, I've explored the use of <strong>unsupervised representation learning</strong> and <strong>reinforcement learning</strong> to create observational / world models that faciliate optimal planning and control. 
+        </p>
+        <p>
+          I've also lead and contributed to perception projects related to: 3D Scene Understanding, 2D/3D Semantic Scene Completion, 2D/3D Object Detection, LiDAR segmentation, and more!
+        </p>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
           <tr>
@@ -216,17 +226,25 @@
             </td>
           </tr>
         </tbody></table>
-
+        </div>
         
 
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+        </p>
+
+
+
+        <button class="accordion">..Work Experience</button>
+        <div class="panel">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Work Experience</heading>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -359,11 +377,19 @@
             </td>
           </tr>
         </tbody></table>
+        </div>
 
 
 
+        <p>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+        </p>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+
+
+        <button class="accordion">..Projects and Competitions</button>
+        <div class="panel">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Projects and Competitions</heading>
@@ -374,7 +400,12 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
+        <p>
+          <strong>Learn by doing</strong> - I've had the opportunity to work on many interesting projects that range across industries such as Robotics, Health Care, Finance, Transportation, and Logistics.  
+        <p>
+          Links to the source code are embedded in the project titles.
+        </p>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
           <tr>
@@ -553,6 +584,7 @@
             </td>
           </tr>
         </tbody></table>
+        </div>
 
       </td>
     </tr>
@@ -560,12 +592,31 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <div id="particles-js"></div>
   <script>
       particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
       function(){
           console.log("particles.json loaded...")
       })
+  </script>
+
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
   </script>
 
 </body>
