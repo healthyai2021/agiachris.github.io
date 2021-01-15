@@ -6,15 +6,52 @@
   <meta name="author" content="Christopher Agia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="icon" type="image/png" href="images/ml_icon.png">
+
+  <style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
 </head>
+
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
-
 <body>
+
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -29,6 +66,17 @@
               <p>
                 I am a fourth year <a href="https://engsci.utoronto.ca/explore_our_program/about_engsci/">Engineering Science</a> student at the University of Toronto, majoring in <strong>Robotics Engineering</strong> and minoring in <strong>Artificial Intelligence</strong>. The goal of my research is to push the boundary of AI perception and decision making systems enabling robots to embody intelligent behaviour with a high-degree of robustness. I am advised by <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a> at the <a href="https://rvl.cs.toronto.edu/">Robot Vision and Learning Lab</a> (affiliations: <a href="https://vectorinstitute.ai/">Vector Institute</a>, <a href="https://robotics.utoronto.ca/">UofT Robotics Institute</a>). My senior year thesis is focused on learning large-scale scene graph representations suited for downstream robot planning and control tasks. We are excitedly working with researchers from <a href="https://liampaull.ca/">Liam Paull</a>'s group at <a href="https://montrealrobotics.ca/">MILA</a>, Facebook AI Research, and Microsoft Research on this project. 
               </p>
+
+              <button type="button" class="collapsible">More</button>
+              <div class="content">
+                <p>Lorem ipsum...</p>
+              </div>
+
+              <button type="button" class="collapsible">Open Collapsible</button>
+              <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
               <p>
               	I'm fortunate to have collaborated on projects with <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a>'s and <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a>'s group at <a href="https://www.cim.mcgill.ca/~mrl/">McGill</a>, and <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/"> Goldie Nejat</a>'s group at the <a href="http://asblab.mie.utoronto.ca/">University of Toronto</a>. In industry, I had the opportunity to pursue a one-year <strong>Deep Learning Research</strong> internship at <a href="http://www.noahlab.com.hk/#/home"><strong>Huawei Noah's Ark Lab</strong></a>, where I worked on perception and localization systems for <strong>self-driving vehicles</strong>. As a <strong>Software Engineering Intern</strong> at <a href="https://about.google/"><strong>Google</strong></a>, I architected an ABI test harness and simulator that allows developers to write language agnostic <a href="https://github.com/proxy-wasm">proxy extensions</a> and test them in a safe and controlled environments. 
               </p>
@@ -557,13 +605,11 @@
 
   <div id="particles-js"></div>
   <script>
-      particlesJS.load("particles-js", "particles_config/particlesjs-config.json",
+      particlesJS.load("particles-js", "particles_config/particlesjs-config-gray.json",
       function(){
           console.log("particles.json loaded...")
       })
   </script>
-
-
 
 </body>
 </html>
