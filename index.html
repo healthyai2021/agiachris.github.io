@@ -41,6 +41,35 @@
 
   </style>  
 
+  <style>
+    
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+  </style>
 </head>
 
 
@@ -76,24 +105,27 @@
                 position robots for success in long-horizon, complex task settings. Thus, my recent work has intersected
                 structured scene representations & planning, and robot vision & control.
               </p>
-              <p>
-                I graduated from the 
-                <a href="https://orientation.engsci.utoronto.ca/2020/07/08/engsci-majors-robotics-engineering/">Engineering Science, Robotics</a> 
-                program at the University of Toronto, where I was advised by <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a> 
-                at <a href="https://rvl.cs.toronto.edu/">RVL</a> and the <a href="https://vectorinstitute.ai/">Vector Institute</a>. 
-                I've been fortunate to collaborate with <a href="https://liampaull.ca/">Liam Paull</a> at 
-                <a href="https://montrealrobotics.ca/">MILA</a>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a> 
-                and <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a> at <a href="https://www.cim.mcgill.ca/~mrl/">McGill</a>, 
-                <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/">Goldie Nejat</a> at the 
-                <a href="http://asblab.mie.utoronto.ca/">University of Toronto</a>, and colleagues from 
-                <a href="https://www.microsoft.com/en-us/research/group/reinforcement-learning-redmond/">Microsoft Research</a> and 
-                <a href="https://ai.facebook.com/">Facebook AI Research</a>. 
-                In industry, I had the opportunity to work on multi-agent reinforcement learning in mixed reality environments at 
-                <a href="https://www.microsoft.com/en-us/research/project/robotics-and-mixed-reality/">Microsoft</a>, perception 
-                and localization for self-driving vehicles at <a href="http://www.noahlab.com.hk/#/home">Huawei Noah's Ark Lab</a> with
-                <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>, and 
-                language-agnostic ABI simulators at <a href="https://about.google/">Google</a> Cloud.
-              </p>
+              <button type="button" class="collapsible">..More</button>
+              <div class="content">
+                <p>
+                  I graduated from the 
+                  <a href="https://orientation.engsci.utoronto.ca/2020/07/08/engsci-majors-robotics-engineering/">Engineering Science, Robotics</a> 
+                  program at the University of Toronto, where I was advised by <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a> 
+                  at <a href="https://rvl.cs.toronto.edu/">RVL</a> and the <a href="https://vectorinstitute.ai/">Vector Institute</a>. 
+                  I've been fortunate to collaborate with <a href="https://liampaull.ca/">Liam Paull</a> at 
+                  <a href="https://montrealrobotics.ca/">MILA</a>, <a href="https://www.cim.mcgill.ca/~dmeger/">David Meger</a> 
+                  and <a href="http://www.cim.mcgill.ca/~dudek/">Gregory Dudek</a> at <a href="https://www.cim.mcgill.ca/~mrl/">McGill</a>, 
+                  <a href="https://www.mie.utoronto.ca/faculty_staff/nejat/">Goldie Nejat</a> at the 
+                  <a href="http://asblab.mie.utoronto.ca/">University of Toronto</a>, and colleagues from 
+                  <a href="https://www.microsoft.com/en-us/research/group/reinforcement-learning-redmond/">Microsoft Research</a> and 
+                  <a href="https://ai.facebook.com/">Facebook AI Research</a>. 
+                  In industry, I had the opportunity to work on multi-agent reinforcement learning in mixed reality environments at 
+                  <a href="https://www.microsoft.com/en-us/research/project/robotics-and-mixed-reality/">Microsoft</a>, perception 
+                  and localization for self-driving vehicles at <a href="http://www.noahlab.com.hk/#/home">Huawei Noah's Ark Lab</a> with
+                  <a href="https://scholar.google.ca/citations?user=-rCulKwAAAAJ&hl=en">Bingbing Liu</a>, and 
+                  language-agnostic ABI simulators at <a href="https://about.google/">Google</a> Cloud.
+                </p>
+              </div>
 
               <p style="text-align:center">
                 <a href="mailto:christopher.agia@mail.utoronto.ca">Email</a> &nbsp/&nbsp
@@ -849,6 +881,25 @@
       });
     }
   </script>
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
 
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
